@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Farmer.Add_cattle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/select_farmer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="Select Farmer"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:textAlignment="textStart"/>
+
+        <EditText android:id="@+id/selectfarmer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:fontFamily="sans-serif"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="@dimen/_8sdp"
+            android:hint="Select Farmer" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/variety"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="Variety Name "
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:textAlignment="textStart"/>
+
+        <EditText android:id="@+id/variety_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:fontFamily="sans-serif"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="@dimen/_8sdp"
+            android:hint="Select variety name" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/no_var"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="Variety No       "
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:textAlignment="textStart"/>
+
+            <EditText android:id="@+id/no_variety"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:fontFamily="sans-serif"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:padding="@dimen/_8sdp"
+                android:hint="Variety no" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:background="@drawable/add_farmer_button"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/white"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="Save"/>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_55sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/add_farmer_button"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:text="Cancel"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/farmer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="Farmer"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/lightBlue"
+                android:fontFamily="sans-serif"
+                android:textAlignment="textStart"/>
+
+            <TextView
+                android:id="@+id/variety_n"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="Variety"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/lightBlue"
+                android:fontFamily="sans-serif"
+                android:textAlignment="textStart"/>
+
+            <TextView
+                android:id="@+id/var_no"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="No"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/lightBlue"
+                android:fontFamily="sans-serif"
+                android:textAlignment="textStart"/>
+
+            <TextView
+                android:id="@+id/actions"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="Actions"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/lightBlue"
+                android:fontFamily="sans-serif"
+                android:textAlignment="textStart"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
